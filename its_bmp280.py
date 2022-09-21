@@ -14,5 +14,5 @@ temp = str(round(temp, 2))
 tempf = str(round(tempf, 1 ))
 
 print(pressure + " hPa: ")
-print(tempf + " °F: ")
-print(temp + " °C: ")
+print(tempf + " F: ")
+print(temp + " C: ")
