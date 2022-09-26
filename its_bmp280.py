@@ -30,21 +30,22 @@ if __name__ == "__main__":
     # hpa hectopascal Pressure units
     
     elif len(args) >= 2:
-        if args[1] == "c":
+        if args[1] == "-c":
             sys.stdout.write('"'+temp+'" ')
-        elif args[1] == "f":
+        elif args[1] == "-f":
             sys.stdout.write('"'+tempf+'" ')
-        elif args[1] == "p":
+        elif args[1] == "-p":
             sys.stdout.write('"'+press+'" ')
-        elif args[1] == "hpa":
+        elif args[1] == "-hpa":
             sys.stdout.write('"'+press+'" ')
         elif args[1] == "-h" or "--help":
             sys.stdout.write('''
 Useage: filename option
-     c: Temprature  
-     f: Temprature
-     p: Pressure
-     hpa: Pressure
+    -h or --help: display this help
+    -f: Fahrenheit 
+    -c: Celsius
+    -p: for Pressure 
+    hpa: hectopascal Pressure units
 
 ''') 
     sys.exit()       
